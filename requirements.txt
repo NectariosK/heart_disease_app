@@ -1,5 +1,9 @@
-keras
-sklearn
-matplotlib
-seaborn
-streamlit
+# Community Cloud runs this app on Python 3.10. Streamlit 1.66+ requires
+# Python 3.11, and the saved forest was pickled with scikit-learn 1.0.2,
+# which does not load on scikit-learn >= 1.2 or NumPy >= 1.24.
+streamlit==1.65.0
+numpy==1.23.5
+pandas==1.5.3
+pyarrow==14.0.2
+scikit-learn==1.0.2
+scipy==1.9.3
